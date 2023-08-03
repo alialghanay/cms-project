@@ -32,7 +32,7 @@ public class sendMail {
         properties.put("mail.smtp.port", "587");
         
         String myAccountEmail = "hpnutsly@gmail.com";
-        String password = "s*ckmy2nuts";
+        String password = "loefnqtgvyajrkjj";
         
         Session session = Session.getInstance(properties, new Authenticator() {
             @Override

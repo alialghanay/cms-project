@@ -70,4 +70,13 @@
     nbproject/build-impl.xml file. 
 
     -->
+    <path id="jaf.classpath">
+    <fileset dir="C:/cms-project/javax.mail.jar">
+        <include name="javax.activation.jar" />
+    </fileset>
+    </path>
+
+    <taskdef name="mail" classname="org.apache.tools.ant.taskdefs.email.EmailTask">
+        <classpath refid="jaf.classpath" />
+    </taskdef>
 </project>
