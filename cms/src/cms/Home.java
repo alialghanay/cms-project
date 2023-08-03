@@ -421,6 +421,8 @@ public class Home extends javax.swing.JFrame {
 
     private void sginUpMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sginUpMenuItemActionPerformed
         // TODO add your handling code here:
+        new Sigup_Panel().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_sginUpMenuItemActionPerformed
 
     private void editExpertMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editExpertMenuItemActionPerformed
@@ -431,7 +433,8 @@ public class Home extends javax.swing.JFrame {
 
     private void techncalSportMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_techncalSportMenuItemActionPerformed
         // TODO add your handling code here:
-        
+        new Technical_SupportJFrame().setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_techncalSportMenuItemActionPerformed
 
     private void editImportMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editImportMenuItemActionPerformed

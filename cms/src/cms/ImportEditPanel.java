@@ -449,6 +449,7 @@ public class ImportEditPanel extends javax.swing.JPanel {
             pstmt.setString(9, iid);
             pstmt.executeUpdate();
             
+            JOptionPane.showMessageDialog(null, "تم الحفظ!");
         }catch(SQLException | ParseException ex){
            LOGGER.log(Level.SEVERE, "An error occurred during login: {0}", ex);
             CmsLogger.log(ex.getMessage());

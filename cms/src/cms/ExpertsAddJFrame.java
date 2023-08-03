@@ -191,6 +191,12 @@ public class ExpertsAddJFrame extends javax.swing.JFrame {
                 pstmt.executeUpdate();
 
                 pstmt.close();
+                idTextField.setText("");
+                nameTextField.setText("");
+                spTextField.setText("");
+                alTextField.setText("");
+                edgreeTextField.setText("");
+                JOptionPane.showMessageDialog(null, "تم تعديل!");
             }catch(SQLException | ParseException ex){
                 LOGGER.log(Level.SEVERE, "An error occurred during login: {0}", ex);
                 CmsLogger.log(ex.getMessage());

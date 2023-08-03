@@ -196,6 +196,7 @@ public class ExportEditpanal extends javax.swing.JFrame {
             pstmt.setString(3, eid);
             pstmt.executeUpdate();
             
+            JOptionPane.showMessageDialog(null, "تم تعديل!");
         }catch(SQLException | ParseException ex){
             LOGGER.log(Level.SEVERE, "An error occurred during login: {0}", ex);
             CmsLogger.log(ex.getMessage());

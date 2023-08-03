@@ -289,11 +289,17 @@ public class Sigup_Panel extends javax.swing.JFrame {
                 pstmt.setString(2, password1);
                 pstmt.setBoolean(3, isAdmin);
                 pstmt.executeUpdate();
+                JOptionPane.showMessageDialog(null, "تم تسجيل!");
             }catch(SQLException ex){
                 LOGGER.log(Level.SEVERE, "An error occurred during login: {0}", ex);
                 CmsLogger.log(ex.getMessage());
                 JOptionPane.showMessageDialog(null, "error: " + ex.getMessage() + "!", "خطأ!", JOptionPane.ERROR_MESSAGE);
             }
+        }else{
+            String ex = "كلمة المرور غير متطابقة";
+            LOGGER.log(Level.SEVERE, "An error occurred during login: {0}", ex);
+            CmsLogger.log(ex);
+            JOptionPane.showMessageDialog(null, "error: " + ex + "!", "خطأ!", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_registerButtonActionPerformed
 

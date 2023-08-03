@@ -221,11 +221,21 @@ public class AgenciesAddPanel extends javax.swing.JPanel {
                     pstmt.executeUpdate();
 
                     pstmt.close();
+                    JOptionPane.showMessageDialog(null, "تم الحفظ!");
                 }catch(SQLException ex){
                     LOGGER.log(Level.SEVERE, "An error occurred during login: {0}", ex);
                     CmsLogger.log(ex.getMessage());
                     JOptionPane.showMessageDialog(null, "error: " + ex.getMessage() + "!", "خطأ!", JOptionPane.ERROR_MESSAGE);
                 }
+                AnameTextField.setText("");
+                MnameTextField.setText("");
+                phoneNumberTextField.setText("");
+                represintiveTextField.setText("");
+                ridTextField.setText("");
+                rphoneTextField.setText("");
+                noteTextArea.setText("");
+                
+                JOptionPane.showMessageDialog(null, "تم تسجيل!");
             }
     }//GEN-LAST:event_addButtonActionPerformed
 

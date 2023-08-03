@@ -198,6 +198,7 @@ public class AgenciesEditPanel extends javax.swing.JPanel {
                 pstmt.executeUpdate();
 
                 pstmt.close();
+                JOptionPane.showMessageDialog(null, "تم تعديل!");
             }catch(SQLException ex){
                 LOGGER.log(Level.SEVERE, "An error occurred during login: {0}", ex);
                 CmsLogger.log(ex.getMessage());

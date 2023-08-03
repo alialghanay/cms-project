@@ -49,7 +49,7 @@ public class Technical_SupportJFrame extends javax.swing.JFrame {
         jLabel2.setText("التقني المراد ارسال الرسالة له");
         jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "علي الغناي", "أحمد المحجوب", "ابوالقاسم الترهوني", " ", " ", " " }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "علي الغناي", "أحمد المحجوب", "ابوالقاسم الترهوني", "عبدالحميد الواعر", " ", " " }));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -140,6 +140,7 @@ public class Technical_SupportJFrame extends javax.swing.JFrame {
         emails.put("علي الغناي", "a.al-ghanay@uot.edu.ly");
         emails.put("أحمد المحجوب", "ahmedelmahjoub0@gmail.com");
         emails.put("ابوالقاسم الترهوني", "abulqasim.tarhouni@gmail.com");
+        emails.put("عبدالحميد الواعر", "elwaer@outlook.com");
         String e = emails.get(tech);
         sendMail.send(e, msg);
     }//GEN-LAST:event_jButton2ActionPerformed

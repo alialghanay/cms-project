@@ -176,6 +176,7 @@ public class ExportAddpanal extends javax.swing.JFrame {
             
             Statement stmt = db.mycon().createStatement();
             stmt.executeUpdate("UPDATE import SET state='منجزة' WHERE id='"+iid+"'");
+            JOptionPane.showMessageDialog(null, "تم الحفظ!");
         }catch(SQLException | ParseException ex){
            LOGGER.log(Level.SEVERE, "An error occurred during login: {0}", ex);
             CmsLogger.log(ex.getMessage());
